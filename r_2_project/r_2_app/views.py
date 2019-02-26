@@ -79,6 +79,8 @@ songs = [
 ]
 
 
+
+# CREATES CONTEXT FOR SONGS.HTML
 def list_songs(request):
     context = {
         'song_list': songs
@@ -86,10 +88,10 @@ def list_songs(request):
 
     return render(request, 'r_2_app/songs.html', context)
 
-
+# CREATES CONTEXT FOR SONG_DETAILS.HTML
 def list_song(request, song_id):
     return render(request, 'r_2_app/song_details.html', {'current_song': songs[song_id]})
 
-
+# CREATES CONTEXT FOR LIMITED_DETAILS.HTML
 def last3(request, song_id):
     return render(request, 'r_2_app/limited_details.html', {'current_song': songs[song_id]})

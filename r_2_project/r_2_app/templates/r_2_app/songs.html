@@ -13,11 +13,14 @@
 </div>
 {% block content %}
 
+
+<!--TABLE FOR INFO-->
 <table class="table">
     <tr>
         <th>Band</th>
         <th>Song</th>
     </tr>
+    <!--LOOP ITERATES THROUGH ARRAY-->
     {% for song in song_list %}
     <tr>
         <td>{{song.song_band}}</td>

@@ -1,7 +1,8 @@
 {% extends 'r_2_app/songs.html' %}
-
+<!--EXTENDED PAGE-->
 {% block content %}
 
+<!--TABLE WITH ALBUM, LYRICS, AND AUDIO-->
 <table class="table">
 
     <tr>
@@ -10,10 +11,12 @@
     </tr>
     <tr>
         <td>Lyrics:</td>
+        <!--EXTERNAL LINK CREATED-->
         <td><a href="{{current_song.song_lyrics}}">{{current_song.song_lyrics}}</a></td>
     </tr>
     <tr>
         <td>Audio:</td>
+        <!--EXTERNAL LINK CREATED-->
         <td><a href="{{current_song.song_audio}}">{{current_song.song_audio}}</a></td>
     </tr>
 

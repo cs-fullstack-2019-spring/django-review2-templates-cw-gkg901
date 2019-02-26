@@ -1,7 +1,7 @@
 {% extends 'r_2_app/songs.html' %}
-
+<!--EXTENDED PAGE-->
 {% block content %}
-
+<!--TABLE WITH SONG TITLE AND BAND-->
 <table class="table">
     <tr>
         <td>Song Title:</td>
@@ -13,6 +13,7 @@
     </tr>
  
 </table>
+<!--LINK TO EXTRA DETAILS-->
 <a href="{% url 'limited_details' current_song.song_id %} ">More Details</a>
 
 {% endblock %}
