@@ -1,0 +1,25 @@
+{% extends 'r_2_app/songs.html' %}
+
+{% block content %}
+
+<table class="table">
+
+    <tr>
+        <td>Album:</td>
+        <td>{{current_song.song_album}}</td>
+    </tr>
+    <tr>
+        <td>Lyrics:</td>
+        <td><a href="{{current_song.song_lyrics}}">{{current_song.song_lyrics}}</a></td>
+    </tr>
+    <tr>
+        <td>Audio:</td>
+        <td><a href="{{current_song.song_audio}}">{{current_song.song_audio}}</a></td>
+    </tr>
+
+
+</table>
+
+
+
+{% endblock %}
